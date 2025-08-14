@@ -5,6 +5,7 @@ import AboutUs from "./AboutUs.jsx";
 import UpdateWithoutDev from "./UpdateWithoutDev.jsx";
 import HowItWorks from "./HowItWorks.jsx";
 import Reasons from "./Reasons.jsx";
+import Footer from "./Footer.jsx";
 
 
 export default function Landing() {
@@ -40,7 +41,9 @@ export default function Landing() {
                 imageSrc="/minipanel.svg"
                 onCtaClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeVFtm3CHkGyQSudbZ49xsSQWphEzCfgRk_mhabNENn96CCyw/viewform", "_blank", "noopener,noreferrer")}
             />
-
+            <Footer 
+                logoSrc="/zono.png"
+            />
         </>
 
     )

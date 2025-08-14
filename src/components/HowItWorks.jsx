@@ -36,7 +36,13 @@ export default function HowItWorks({
   const t = themeClasses[theme];
 
   return (
-    <section id={id} className={`${t.section} relative overflow-hidden`}>
+    <section id={id} className={`${t.section} relative overflow-hidden py-20 sm:py-24
+        bg-gradient-to-b from-black via-neutral-800 to-neutral-700
+
+`}>
+        {/* from-neutral-800 via-neutral-700 to-neutral-600
+
+        from-black via-neutral-900 to-neutral-800 */}
       {/* halos suaves para profundidad */}
       <div className="pointer-events-none absolute inset-0 opacity-30 [mask-image:radial-gradient(60%_60%_at_50%_30%,black,transparent)]">
         <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-amber-400/20 blur-3xl" />
