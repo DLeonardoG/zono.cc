@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Header from "./Header.jsx";
 import Home from "./Home.jsx";
 import AboutUs from "./AboutUs.jsx";
+import UpdateWithoutDev from "./UpdateWithoutDev.jsx";
+import HowItWorks from "./HowItWorks.jsx";
 
 
 export default function Landing() {
@@ -28,6 +30,8 @@ export default function Landing() {
                 ctaLabel="Regístrate GRATIS"
                 ctaNewTab
             />
+            <UpdateWithoutDev></UpdateWithoutDev>
+            <HowItWorks></HowItWorks>
 
         </>
 
