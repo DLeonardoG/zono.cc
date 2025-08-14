@@ -99,8 +99,7 @@ export default function Header({
                 "fixed inset-x-0 top-0 z-50 transition-all duration-300",
                 scrolled
                     ? cn(
-                        "bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow-sm",
-                        accentBorder
+                        "bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow-sm"
                     )
                     : transparentUntilScroll
                         ? "bg-transparent"

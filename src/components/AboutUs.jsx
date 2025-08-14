@@ -33,7 +33,7 @@ function AboutUs({
     <section className={`bg-white text-black py-16 sm:py-20 ${className}`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Encabezado */}
-        <div className="mb-10 sm:mb-14">
+        <div className="mb-10 sm:mb-6">
           <p className="text-sm sm:text-base font-medium text-yellow-600 tracking-wide uppercase">{tagline}</p>
           <h1 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
             {title.replace(/ZONO/gi, '')}
@@ -46,6 +46,22 @@ function AboutUs({
 
         {/* Contenido */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+         {/* Video */}
+          <div className="lg:col-span-6">
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+              <div className="border-b-4 border-yellow-500">
+                <div className="relative w-full aspect-video">
+                  <iframe
+                    className="absolute inset-0 h-full w-full"
+                    src={`https://www.youtube.com/embed/${youtubeId}`}
+                    title="Video institucional ZONO"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
           {/* Texto */}
           <div className="lg:col-span-6 xl:pr-8">
             <p className="text-lg leading-8 text-gray-800">
@@ -87,26 +103,10 @@ function AboutUs({
                   <path d="M12 5l7 7-7 7" />
                 </svg>
               </a>
-              <span className="text-sm text-gray-600">No se requiere tarjeta.</span>
             </div>
           </div>
 
-          {/* Video */}
-          <div className="lg:col-span-6">
-            <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
-              <div className="border-b-4 border-yellow-500">
-                <div className="relative w-full aspect-video">
-                  <iframe
-                    className="absolute inset-0 h-full w-full"
-                    src={`https://www.youtube.com/embed/${youtubeId}`}
-                    title="Video institucional ZONO"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </div>
     </section>
