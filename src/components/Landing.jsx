@@ -4,6 +4,7 @@ import Home from "./Home.jsx";
 import AboutUs from "./AboutUs.jsx";
 import UpdateWithoutDev from "./UpdateWithoutDev.jsx";
 import HowItWorks from "./HowItWorks.jsx";
+import Reasons from "./Reasons.jsx";
 
 
 export default function Landing() {
@@ -31,7 +32,14 @@ export default function Landing() {
                 ctaNewTab
             />
             <UpdateWithoutDev></UpdateWithoutDev>
-            <HowItWorks></HowItWorks>
+            <HowItWorks
+                videoUrl="https://www.youtube.com/embed/TU_ID"
+                ctaHref="https://tusitio.com/registro"
+            />
+            <Reasons
+                imageSrc="/minipanel.svg"
+                onCtaClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeVFtm3CHkGyQSudbZ49xsSQWphEzCfgRk_mhabNENn96CCyw/viewform", "_blank", "noopener,noreferrer")}
+            />
 
         </>
 
