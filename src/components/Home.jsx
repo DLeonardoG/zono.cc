@@ -2,8 +2,8 @@ import React from "react";
 
 const Home = () => {
     return (
-        <section className="bg-white text-gray-900 lg:pt-30">
-            <div className="xl:px-40 container mx-auto flex flex-col md:flex-row items-center px-6 py-16 gap-10">
+        <section id="home" className="bg-white text-gray-900 lg:pt-30">
+            <div className="container mx-auto flex flex-col md:flex-row items-center max-w-7xl px-6 py-25 gap-10">
 
                 <div className="flex-1 space-y-6">
                     {/* <img 
@@ -30,8 +30,8 @@ const Home = () => {
                         Quiero mi tienda
                     </a>
                 </div>
-                <div className="flex-1 flex justify-center">
-                    <div className="relative w-120">
+                <div className="flex-1 flex justify-center w-full h-full">
+                    <div className="relative w-full">
                         <div className="absolute -top-4 -right-4 w-30 h-30 bg-yellow-100 rounded-full blur-2xl opacity-50"></div>
                         <iframe
                             className="rounded-2xl shadow-2xl border border-gray-200 w-full aspect-video"

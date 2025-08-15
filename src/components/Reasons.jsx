@@ -18,6 +18,7 @@ export default function Reasons({
 }) {
     return (
         <section
+        id="why_zono"
             className=" relative py-20 sm:py-24 bg-gradient-to-b from-neutral-700 via-neutral-800 to-black">
             {/* Contenedor */}
             <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -30,7 +31,7 @@ export default function Reasons({
                     <img
                         src={imageSrc}
                         alt={imageAlt}
-                        className="w-full h-[230px] sm:h-[360px] lg:h-full object-cover"
+                        className="w-full h-[400px] sm:h-[360px] lg:h-full object-cover object-top lg:object-center"
                         loading="lazy"
                     />
 

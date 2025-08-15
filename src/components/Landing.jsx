@@ -16,9 +16,9 @@ export default function Landing() {
                 navItems={[
                     { label: "Inicio", href: "#home" },
                     { label: "¿Quienes somos?", href: "#quienes_somos" },
-                    { label: "3Parte", href: "#quienes_somos" },
-                    { label: "¿Como funciona?", href: "#funcion" },
-                    { label: "Razones", href: "#funcion" },
+                    { label: "Caracterias", href: "#features" },
+                    { label: "¿Como funciona?", href: "#functions" },
+                    { label: "¿Por que ZONO?", href: "#why_zono" },
                 ]}
                 cta={{ label: "Iniciar sesión", href: "https://ui.zono.cc/" }}
                 height={80}

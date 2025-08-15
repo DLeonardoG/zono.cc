@@ -31,12 +31,11 @@ export default function HowItWorks({
   secondaryText = "Ver documentación",
   secondaryHref = "#docs",
   theme = "dark",
-  id = "como-funciona",
 }) {
   const t = themeClasses[theme];
 
   return (
-    <section id={id} className={`${t.section} relative overflow-hidden py-20 sm:py-24
+    <section id="functions" className={`${t.section} relative overflow-hidden py-20 sm:py-24
         bg-gradient-to-b from-black via-neutral-800 to-neutral-700
 
 `}>
