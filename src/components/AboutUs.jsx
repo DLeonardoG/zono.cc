@@ -20,7 +20,6 @@ function AboutUs({
   title = "¿Qué es ZONO?",
   tagline = "La nueva forma de vender.",
   description,
-  youtubeId = "dQw4w9WgXcQ", // Reemplazar por el ID real
   ctaHref = "#registro",
   ctaLabel = "Regístrate GRATIS",
   ctaNewTab = true,
@@ -53,7 +52,7 @@ function AboutUs({
                 <div className="relative w-full aspect-video">
                   <iframe
                     className="absolute inset-0 h-full w-full"
-                    src={`https://www.youtube.com/embed/${youtubeId}`}
+                    src={`https://www.youtube.com/embed/py2LRfVc-IQ?si=zinz2JDJ0klyNbT0`}
                     title="Video institucional ZONO"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen

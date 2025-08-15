@@ -58,21 +58,12 @@ export default function HowItWorks({
           transition={{ duration: 0.45 }}
         >
           <div className="relative  aspect-video w-full overflow-hidden rounded-xl">
-            {videoUrl.includes("youtube") || videoUrl.includes("vimeo") ? (
-              <iframe
+          <iframe
                 className="absolute inset-0 h-full w-full"
-                src={videoUrl}
-                title="Demo"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
+                src="https://www.youtube.com/embed/ku0UQgaTe9A?si=3qWYWrQafKIPpfB7"
+                title="Presentación Zono"
                 allowFullScreen
               />
-            ) : (
-              <video className="absolute inset-0 h-full w-full" controls preload="metadata">
-                <source src={videoUrl} />
-              </video>
-            )}
           </div>
         </motion.div>
 
@@ -96,21 +87,13 @@ export default function HowItWorks({
             transition={{ duration: 0.45 }}
           >
             <div className="relative  aspect-video w-full overflow-hidden rounded-xl">
-              {videoUrl.includes("youtube") || videoUrl.includes("vimeo") ? (
-                <iframe
-                  className="absolute inset-0 h-full w-full"
-                  src={videoUrl}
-                  title="Demo"
-                  loading="lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                />
-              ) : (
-                <video className="absolute inset-0 h-full w-full" controls preload="metadata">
-                  <source src={videoUrl} />
-                </video>
-              )}
+
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.youtube.com/embed/ku0UQgaTe9A?si=3qWYWrQafKIPpfB7"
+                title="Presentación Zono"
+                allowFullScreen
+              />
             </div>
           </motion.div>
           <p className={`mt-5 ${t.body}`}>{lead}</p>
