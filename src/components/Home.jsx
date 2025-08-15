@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
     return (
-        <section id="home" className="min-h-[100vh] flex items-center justify- bg-white text-gray-900 lg:pt- 30 ">
+        <section data-fade-section id="home" className="min-h-[100vh] flex items-center justify- bg-white text-gray-900 lg:pt- 30 ">
             <div className="container mx-auto flex flex-col md:flex-row items-center max-w-7xl px-6 py-25 gap-10 ">
 
                 <div className="flex-1 space-y-6">

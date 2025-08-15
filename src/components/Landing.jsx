@@ -7,11 +7,15 @@ import HowItWorks from "./HowItWorks.jsx";
 import Reasons from "./Reasons.jsx";
 import Footer from "./Footer.jsx";
 
+import { useScrollFadeBasic } from "../hooks/useScrollFadeBasic";
+
 
 export default function Landing() {
+     useScrollFadeBasic("#scroll-root");
+
     return (
         <>
-            <Header
+            <Header data-fade-section
                 logo={{ src: "/zono.png", alt: "Zono", href: "/" }}
                 navItems={[
                     { label: "Inicio", href: "#home" },
