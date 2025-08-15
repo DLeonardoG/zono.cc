@@ -35,7 +35,7 @@ export default function HowItWorks({
   const t = themeClasses[theme];
 
   return (
-    <section id="functions" className={`${t.section} relative overflow-hidden py-20 sm:py-24
+    <section id="functions" className={`${t.section} relative overflow-hidden py-20 sm:py-24 min-h-screen lg:flex lg:items-center lg:justify-center
         bg-gradient-to-b from-black via-neutral-800 to-neutral-700
 
 `}>

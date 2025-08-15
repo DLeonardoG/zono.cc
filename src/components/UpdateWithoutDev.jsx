@@ -2,7 +2,7 @@ import React from "react";
 
 const UpdateWithoutDev = () => {
   return (
-    <section id="features" className="w-full scroll-mt-8 bg-gradient-to-br from-yellow-50 via-yellow-100 to-yellow-200 py-16">
+    <section id="features" className="w-full min-h-screen lg:flex lg:items-center scroll-mt- 8 bg-gradient-to-br from-yellow-50 via-yellow-100 to-yellow-200 py-16">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 gap-12">
         
         {/* Texto */}

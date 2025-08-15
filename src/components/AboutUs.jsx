@@ -29,7 +29,7 @@ function AboutUs({
   const rel = ctaNewTab ? "noopener noreferrer" : undefined;
 
   return (
-    <section id="quienes_somos" className={`bg-white scroll-mt-10 text-black py-16 sm:py-20 ${className}`}>
+    <section id="quienes_somos" className={`bg-white min-h-screen lg:flex lg:items-center  scroll-mt- 10 text-black py-16 sm:py-20 ${className}`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Encabezado */}
         <div className="mb-10 sm:mb-6">
