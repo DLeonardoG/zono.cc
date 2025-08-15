@@ -39,7 +39,7 @@ export default function HowItWorks({
         bg-gradient-to-b from-black via-neutral-800 to-neutral-700
 
 `}>
-        {/* from-neutral-800 via-neutral-700 to-neutral-600
+      {/* from-neutral-800 via-neutral-700 to-neutral-600
 
         from-black via-neutral-900 to-neutral-800 */}
       {/* halos suaves para profundidad */}
@@ -51,13 +51,13 @@ export default function HowItWorks({
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 py-20 sm:py-24 lg:grid-cols-2">
         {/* Columna izquierda: Video */}
         <motion.div
-          className={`rounded-2xl p-2 sm:p-3 ring-1 ${t.card} order-1 lg:order-none`}
+          className={`rounded-2xl hidden lg:flex p-2 sm:p-3 ring-1 ${t.card} order-1 lg:order-none`}
           initial={{ opacity: 0, y: 14 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.45 }}
         >
-          <div className="relative aspect-video w-full overflow-hidden rounded-xl">
+          <div className="relative  aspect-video w-full overflow-hidden rounded-xl">
             {videoUrl.includes("youtube") || videoUrl.includes("vimeo") ? (
               <iframe
                 className="absolute inset-0 h-full w-full"
@@ -88,6 +88,31 @@ export default function HowItWorks({
 
           <p className={`mt-2 text-lg ${t.subtitle}`}>{kicker}</p>
 
+          <motion.div
+            className={`rounded-2xl my-[2vh] lg:hidden p-2 sm:p-3 ring-1 ${t.card} order-1 lg:order-none`}
+            initial={{ opacity: 0, y: 14 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.45 }}
+          >
+            <div className="relative  aspect-video w-full overflow-hidden rounded-xl">
+              {videoUrl.includes("youtube") || videoUrl.includes("vimeo") ? (
+                <iframe
+                  className="absolute inset-0 h-full w-full"
+                  src={videoUrl}
+                  title="Demo"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              ) : (
+                <video className="absolute inset-0 h-full w-full" controls preload="metadata">
+                  <source src={videoUrl} />
+                </video>
+              )}
+            </div>
+          </motion.div>
           <p className={`mt-5 ${t.body}`}>{lead}</p>
 
           <ul className="mt-6 space-y-3">
@@ -100,6 +125,7 @@ export default function HowItWorks({
           </ul>
 
           {note && <p className={`mt-5 text-sm ${t.subtitle}`}>{note}</p>}
+
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a

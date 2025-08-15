@@ -19,7 +19,7 @@ export default function Reasons({
     return (
         <section
         id="why_zono"
-            className=" relative py-20 sm:py-24 bg-gradient-to-b from-neutral-700 via-neutral-800 to-black">
+            className=" relative py-20 sm:py-8 bg-gradient-to-b from-neutral-700 via-neutral-800 to-black">
             {/* Contenedor */}
             <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                 {/* Cabecera */}

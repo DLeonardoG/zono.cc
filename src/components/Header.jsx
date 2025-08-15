@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
+import { smoothScrollTo } from './SmoothScrollTo';
 
 const cn = (...args) => args.filter(Boolean).join(" ");
 
@@ -113,12 +114,19 @@ export default function Header({
 
                 {/* Desktop nav */}
                 <nav className="hidden lg:flex items-center gap-1">
-                    {navItems.map((item) => (
-                        <NavLink key={item.href} href={item.href}>
-                            {item.label}
-                        </NavLink>
-                    ))}
-                </nav>
+      {navItems.map((item) => (
+        <button
+          key={item.href}
+          onClick={(e) => {
+            e.preventDefault();
+            smoothScrollTo(item.href); // Ej: "#why_zono"
+          }}
+          className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 hover:underline underline-offset-4 decoration-2 decoration-yellow-400 cursor-pointer"
+        >
+          {item.label}
+        </button>
+      ))}
+    </nav>
 
                 <div className="hidden lg:flex items-center gap-3">
                     {cta?.label && <CTAButton {...cta} />}
