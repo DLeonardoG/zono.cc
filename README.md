@@ -1,6 +1,6 @@
-# React + Vite + Tailwind CSS Project
+# Domain of Zono.cc
 
-A modern web application built with React, Vite, and Tailwind CSS.
+Landing of Zono
 
 ## Tech Stack
 
@@ -18,8 +18,8 @@ Make sure you have Node.js (version 14 or higher) and npm installed on your mach
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd <project-directory>
+git clone https://github.com/zonocc/www
+cd www
 ```
 
 2. Install dependencies:
@@ -36,7 +36,6 @@ npm run dev
 ```
 http://localhost:5173
 ```
-*(or the port shown in your terminal)*
 
 ---
 
