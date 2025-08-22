@@ -43,9 +43,7 @@ function AboutUs({
           </h1>
         </div>
 
-        {/* Contenido */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
-         {/* Video */}
           <div className="lg:col-span-6">
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
               <div className="border-b-4 border-yellow-500">
@@ -61,7 +59,6 @@ function AboutUs({
               </div>
             </div>
           </div>
-          {/* Texto */}
           <div className="lg:col-span-6 xl:pr-8">
             <p className="text-lg leading-8 text-gray-800">
               {description || defaultDescription}
@@ -104,8 +101,6 @@ function AboutUs({
               </a>
             </div>
           </div>
-
-         
         </div>
       </div>
     </section>

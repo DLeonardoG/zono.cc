@@ -20,14 +20,9 @@ export default function Reasons({
         <section
         id="why_zono"
             className=" relative py-20 sm:py-8 bg-gradient-to-b from-neutral-700 via-neutral-800 to-black">
-            {/* Contenedor */}
             <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-                {/* Cabecera */}
 
-
-                {/* Grid principal */}
                 <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-                    {/* Columna izquierda: Imagen / Mockup */}
                     <img
                         src={imageSrc}
                         alt={imageAlt}
@@ -35,10 +30,7 @@ export default function Reasons({
                         loading="lazy"
                     />
 
-                    {/* Columna derecha: Lista + CTA */}
-                    {/* Columna derecha: Título + Lista + CTA */}
                     <div className="order-1 lg:order-2">
-                        {/* Encabezado semántico y accesible */}
                         <div className="order-1 lg:order-2">
                             <div className="max-w-2xl">
                                 <h2
@@ -54,7 +46,6 @@ export default function Reasons({
                         </div>
 
 
-                        {/* Contenido de la columna (lista de razones) */}
                         <ul className="mt-8 space-y-5">
                             {reasons.map((text, i) => (
                                 <li key={i} className="flex items-start gap-4">
@@ -82,7 +73,6 @@ export default function Reasons({
                             ))}
                         </ul>
 
-                        {/* Nota + CTA */}
                         <div className="mt-10 rounded-2xl border border-white/10 bg-neutral-900/40 p-6 sm:p-7">
                             <p className="text-sm sm:text-base text-neutral-200">{note}</p>
 
@@ -112,7 +102,6 @@ export default function Reasons({
                     </div>
                 </div>
 
-                {/* Separador sutil inferior para transición con la siguiente sección */}
                 <div className="mt-14 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
             </div>
         </section>

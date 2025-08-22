@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-/* ---- Temas del proyecto ---- */
 const themeClasses = {
   dark: {
     section: "bg-black",
@@ -24,7 +23,7 @@ export default function HowItWorks({
     "Recibe pedidos en tiempo real desde web y WhatsApp.",
     "Administra estados, pagos y entregas desde un solo panel.",
   ],
-  videoUrl = "https://www.youtube.com/embed/dQw4w9WgXcQ", // reemplaza con tu URL
+  videoUrl = "https://www.youtube.com/embed/dQw4w9WgXcQ",
   note = "También te mostramos cómo se procesa un pedido cuando un cliente compra.",
   ctaText = "Regístrate GRATIS",
   ctaHref = "#registro",
@@ -42,14 +41,12 @@ export default function HowItWorks({
       {/* from-neutral-800 via-neutral-700 to-neutral-600
 
         from-black via-neutral-900 to-neutral-800 */}
-      {/* halos suaves para profundidad */}
       <div className="pointer-events-none absolute inset-0 opacity-30 [mask-image:radial-gradient(60%_60%_at_50%_30%,black,transparent)]">
         <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-amber-400/20 blur-3xl" />
         <div className="absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-amber-400/10 blur-3xl" />
       </div>
 
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 py-20 sm:py-24 lg:grid-cols-2">
-        {/* Columna izquierda: Video */}
         <motion.div
           className={`rounded-2xl hidden lg:flex p-2 sm:p-3 ring-1 ${t.card} order-1 lg:order-none`}
           initial={{ opacity: 0, y: 14 }}
@@ -67,7 +64,6 @@ export default function HowItWorks({
           </div>
         </motion.div>
 
-        {/* Columna derecha: Texto */}
         <div className="mx-auto max-w-xl">
           <div className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm font-medium ${t.badge}`}>
             <span>Demo en tiempo real</span>

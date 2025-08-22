@@ -112,14 +112,13 @@ export default function Header({
             <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
                 <Logo {...logo} />
 
-                {/* Desktop nav */}
                 <nav className="hidden lg:flex items-center gap-1">
       {navItems.map((item) => (
         <button
           key={item.href}
           onClick={(e) => {
             e.preventDefault();
-            smoothScrollTo(item.href); // Ej: "#why_zono"
+            smoothScrollTo(item.href);
           }}
           className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 hover:underline underline-offset-4 decoration-2 decoration-yellow-400 cursor-pointer"
         >
@@ -134,8 +133,6 @@ export default function Header({
 
                 <MobileMenuButton open={open} toggle={() => setOpen((v) => !v)} />
             </div>
-
-            {/* Mobile drawer */}
             <div
                 className={cn(
                     "lg:hidden origin-top overflow-hidden border-t border-gray-200 bg-white transition-all duration-300",
